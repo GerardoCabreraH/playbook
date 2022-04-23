@@ -1,0 +1,18 @@
+{
+  "name": "twitter_practice",
+  "version": "1.0.0",
+  "description": "Crear una aplicacion mediante Express y hacer pruebas mediante JEST",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node ./node_modules/jest/bin/jest"
+  },
+  "author": "GerardoCabreraH",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
