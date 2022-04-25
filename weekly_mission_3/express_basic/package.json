@@ -4,7 +4,7 @@
   "description": "Crear un servidor de JavaScript mediante el paquete Express",
   "main": "index.js",
   "scripts": {
-    "test": "jest --forceExit"
+    "test": "jest"
   },
   "author": "GerardoCabreraH",
   "license": "ISC",
