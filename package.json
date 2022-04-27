@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/GerardoCabreraH/playbook#readme",
   "devDependencies": {
-    "jest": "^28.0.2",
+    "jest": "^26.0.0",
     "supertest": "^6.2.3"
   },
   "dependencies": {
