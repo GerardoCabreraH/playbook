@@ -1,15 +1,35 @@
 {
   "name": "fizzbuzz",
   "version": "1.0.0",
-  "description": "",
+  "description": "Consiste en un ejercicio basado en una aplicación existente y lo que se tenia que hacer es refactorizar el código",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "start": "node index.js",
+    "test": "jest",
+    "linter": "node ./node_modules/eslint/bin/eslint.js .",
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
   },
   "keywords": [],
   "author": "GerardoCabreraH",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^28.0.2"
+    "eslint": "^8.14.0",
+    "jest": "^26.0.0",
+    "supertest": "^6.2.3"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GerardoCabreraH/fizzbuzz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GerardoCabreraH/fizzbuzz/issues"
+  },
+  "homepage": "https://github.com/GerardoCabreraH/fizzbuzz#readme",
+  "dependencies": {
+    "express": "^4.18.0"
   }
 }

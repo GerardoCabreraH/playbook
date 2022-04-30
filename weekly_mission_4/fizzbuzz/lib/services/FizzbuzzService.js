@@ -1,37 +1,30 @@
 class FizzbuzzService {
-    static assignFizzTrick(explorer) {
-        if(explorer.score%3 === 0){
-            explorer.trick = "FIZZ";
-            return explorer;
-        }
-    }
-
-    static assignBuzzTrick(explorer) {
-        if(explorer.score%5 === 0){
-            explorer.trick = "BUZZ";
-            return explorer;
-        }
-    }
-
-    static assignFizzBuzzTrick(explorer) {
-        if(explorer.score%5 === 0 && explorer.score%3 === 0){
+    static applyValidationInExplorer(explorer) { 
+        if(explorer.score % 5 === 0 && explorer.score % 3 === 0) {
             explorer.trick = "FIZZBUZZ";
             return explorer;
-        }
-    }
-
-    static applyValidationInExplorer(explorer) {
-        if(this.assignFizzTrick(explorer) && this.assignBuzzTrick(explorer) && this.assignFizzBuzzTrick(explorer)){
+        }else if (explorer.score % 5 === 0) {
+            explorer.trick = "BUZZ";
             return explorer;
-        }
-        if (this.assignFizzTrick(explorer) || this.assignBuzzTrick(explorer) || this.assignFizzBuzzTrick(explorer)) {
+        }else if (explorer.score % 3 === 0) {
+            explorer.trick = "FIZZ";
             return explorer;
-        }
-        else {
+        }else {
             explorer.trick = explorer.score;
             return explorer;
         }
     }
+    static applyValidationInNumber(score) {
+        if (score % 3 === 0 && score % 5 === 0) {
+            return "FIZZBUZZ";
+        } else if (score % 3 === 0) {
+            return "FIZZ";
+        } else if (score % 5 === 0) {
+            return "BUZZ";
+        } else {
+            return score;
+        }
+    }
 }
 
-module.exports = FizzbuzzService
+module.exports = FizzbuzzService;

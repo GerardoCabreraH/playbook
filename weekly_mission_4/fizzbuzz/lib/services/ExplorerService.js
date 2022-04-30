@@ -1,20 +1,24 @@
 class ExplorerService {
     static filterByMission(explorers, mission) {
-        const explorersInNode = explorers.filter((explorer) => explorer.mission === mission);
-        return explorersInNode
+        const explorersInMission = explorers.filter((explorer) => explorer.mission === mission);
+        return explorersInMission;
     }
 
     static getAmountOfExplorersByMission(explorers, mission) {
-        const explorersInNode = explorers.filter((explorer) => explorer.mission === mission);
-        const explorersAmountByMission = explorersInNode.length
-        return explorersAmountByMission
+        const explorersInMission = explorers.filter((explorer) => explorer.mission === mission);
+        return explorersInMission.length;
     }
 
     static getExplorersUsernamesByMission(explorers, mission) {
-        const explorersInNodeToGetUsernames = explorers.filter((explorer) => explorer.mission === mission);
-        const usernamesInNode = explorersInNodeToGetUsernames.map((explorer) => explorer.githubUsername);
-        return usernamesInNode
+        const explorersInMission = explorers.filter((explorer) => explorer.mission === mission);
+        const explorersUsernames = explorersInMission.map((explorer) => explorer.githubUsername);
+        return explorersUsernames;
+    }
+
+    static filterByStack(explorers, stack) {
+        const explorersInStack = explorers.filter((explorer) => explorer.stacks.includes(stack));
+        return explorersInStack;
     }
 }
 
-module.exports = ExplorerService
+module.exports = ExplorerService;
