@@ -1,0 +1,23 @@
+{
+  "name": "trello-api",
+  "version": "1.0.0",
+  "description": "Utilizar las variables de entorno para consumir una API de terceros.",
+  "main": "app.js",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "trello": "^0.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "jest": "^26.0.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest",
+    "linter": "node ./node_modules/eslint/bin/eslint.js .",
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
+  },
+  "keywords": [],
+  "author": "GerardoCabreraH",
+  "license": "ISC"
+}

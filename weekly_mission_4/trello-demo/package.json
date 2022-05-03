@@ -1,0 +1,24 @@
+{
+  "name": "trello-demo",
+  "version": "1.0.0",
+  "description": "El propósito es para poder usar una API de terceros y la API para el ejercicio que se utilizara es `Trello`",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "linter": "node ./node_modules/eslint/bin/eslint.js .",
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
+  },
+  "keywords": [],
+  "author": "GerardoCabreraH",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0"
+  }
+}
